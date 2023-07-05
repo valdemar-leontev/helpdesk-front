@@ -1,0 +1,35 @@
+@import '../../../../../assets/styles/variables';
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px $base-light-grey solid;
+  margin-top: 10px;
+
+  .card-footer_settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+
+    .card-footer_settings_icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card-footer_settings_mandatory-question {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+
+      @media screen and (max-width: 425px) {
+        font-size: $base-small-font;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+      }
+    }
+  }
+}

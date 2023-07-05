@@ -1,0 +1,28 @@
+@import '../../../assets/styles/variables';
+
+  .about-dialog-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    :first-child {
+      margin-top: 5px;
+
+      svg {
+        width: 80px;
+
+        @media screen and (max-width: 425px) {
+          width: 60px;
+        }
+      }
+    }
+
+    :last-child {
+      font-size: $base-big-font;
+
+      @media screen and (max-width: 425px) {
+        font-size: $base-standard-font;
+      }
+    }
+  }

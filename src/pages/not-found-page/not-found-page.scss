@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables';
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 50px;
+
+  svg {
+    fill: $base-dark-grey;
+  }
+
+  .not-found-texts {
+    text-align: center;
+
+    span {
+      font-size: $base-large-font;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: $base-standard-font;
+    }
+  }
+}

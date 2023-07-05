@@ -1,0 +1,18 @@
+.notification-toolbar-badge {
+  font-size: 8px;
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  display: inline;
+  animation-duration: 1s;
+  animation-name: scaleUp;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-weight: bold;
+}
+
+@keyframes scaleUp {
+   from {
+     color: rgba(17, 11, 14, 0);
+   }
+ }

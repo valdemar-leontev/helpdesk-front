@@ -1,0 +1,26 @@
+.select-variants-form-variant {
+  .dx-box-flex {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+  .delete-variant {
+    cursor: pointer;
+  }
+}
+
+.select-variants-form {
+
+  .variants-container_button {
+
+    .dx-button-mode-contained {
+      border-radius: 50%;
+      border: 0;
+    }
+  }
+
+  .dx-item-content.dx-box-item-content.dx-box-flex.dx-box.dx-widget.dx-visibility-change-handler.dx-collection {
+    align-items: center !important;
+    padding: 5px 0 5px 0;
+  }
+}

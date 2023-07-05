@@ -1,0 +1,25 @@
+{
+  "question_4": {
+      "value_0": "Valdemar",
+      "questionTypeId": 1
+  },
+  "question_5": {
+      "value_0": "19",
+      "questionTypeId": 1
+  },
+  "question_6": {
+      "value_0": 4,
+      "questionTypeId": 2
+  },
+  "question_7": {
+      "value_0": 6,
+      "questionTypeId": 2
+  },
+  "question_8": {
+      "questionTypeId": 3,
+      "value_9": false,
+      "value_10": false,
+      "value_11": false,
+      "value_12": true
+  }
+}

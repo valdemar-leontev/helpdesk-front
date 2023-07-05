@@ -1,0 +1,27 @@
+.app-loader {
+  .dx-loadpanel-content {
+    z-index: 15002;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: initial;
+  }
+
+  .dx-loadpanel-content .dx-loadpanel-content-wrapper {
+    display: none;
+  }
+
+  .dx-loadpanel-content img {
+    width: 55px;
+    height: 55px;
+    justify-items: flex-start;
+  }
+
+  .dx-loadpanel-content span {
+    padding: 10px;
+  }
+
+ .dx-loadpanel-wrapper {
+    display: none !important;
+  }
+}

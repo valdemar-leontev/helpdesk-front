@@ -1,0 +1,22 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  :first-child {
+    display: flex;
+    flex: 1;
+  }
+
+  :last-child {
+    display: flex;
+    flex: 1;
+  }
+
+  .dx-menu-item-text {
+    display: flex;
+    flex: 5;
+    min-width: 100px;
+  }
+}
+

@@ -1,0 +1,24 @@
+@import '../../../../assets/styles/variables';
+
+.single-select-adder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+
+  .single-select-adder_checkbox {
+
+  }
+
+  .single-select-adder_textbox {
+  }
+
+  .single-select-adder_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    font-size: $base-big-font;
+    font-weight: 500;
+  }
+}

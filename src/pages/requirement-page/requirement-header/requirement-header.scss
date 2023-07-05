@@ -1,0 +1,79 @@
+@import '../../../assets/styles/variables';
+
+.card {
+  gap: 20px;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .passage_page__name {
+    font-size: 28px;
+
+    @media screen and (max-width: 425px) {
+      font-size: $base-large-font;
+    }
+  }
+
+  .requirement-review-state-icon {
+    position: relative;
+    top: -189px;
+    left: 100%;
+    color: grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: rgba(128, 128, 128, 0.55) 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .passage_page__description {
+    font-size: $base-large-font;
+    color: grey;
+    word-wrap: break-word;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .about-author {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        color: black;
+        transition: all 0.4s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          color: grey;
+        }
+      }
+    }
+    @media screen and (max-width: 425px) {
+      font-size: $base-big-font;
+    }
+  }
+}
+.app-popover {
+  .dx-popup-content {
+    padding: 10px;
+
+    .popover-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+      margin-bottom: 5px;
+      color: gray;
+      padding: 6px;
+    }
+  }
+}

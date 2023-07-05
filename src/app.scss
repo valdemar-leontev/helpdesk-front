@@ -1,0 +1,313 @@
+@import './assets/styles/variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: $base-page-background !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $base-page-background;
+  padding: 7rem 0 7rem 0;
+  align-items: center;
+
+  @media screen and (max-width: 425px) {
+    padding: 5rem 0 5rem 0;
+  }
+
+  .app_questionnaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.app-common-dialog {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  min-width: 400px;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.app-popup {
+  outline: 0;
+}
+
+.app-popup .dx-popup-content {
+  padding: 20px 25px;
+}
+
+.notification-popup .dx-popup-content {
+  padding: 10px;
+}
+
+.app-popup .dx-popup-title.dx-toolbar .dx-toolbar-items-container {
+  height: 46px;
+}
+
+.app-popup .dx-popup-title {
+  padding-left: 15px;
+
+  .app-popup-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .app-popup-title_info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+      .app-popup-title_info_text {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.dx-dialog .dx-toolbar-items-container{
+  height: 46px !important;
+}
+
+.dialog-content__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 0 10px 0;
+
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+    padding: 2px 0 2px 0;
+  }
+}
+
+.app-rounded-button.dx-button, .dx-toolbar-button.app-rounded-button .dx-button {
+
+  border-radius: 50%;
+  border: 0;
+}
+
+.app-rounded-button .dx-button-content, .dx-toolbar-button.app-rounded-button .dx-button-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-content__buttons {
+  margin-top: 20px;
+
+  .dialog-content__button {
+    font-size: $base-big-font;
+
+    @media screen and (max-width: 425px) {
+      font-size: $base-standard-font;
+    }
+  }
+}
+.dx-form {
+  .dx-field-item-label-location-top {
+    padding: 16px 0 0;
+  }
+
+  .dx-selectbox {
+    .dx-icon {
+      color: rgba(0,0,0,.54);
+    }
+  }
+}
+
+.app-command-button {
+  border-radius: 50% !important;
+  box-shadow: 0 0 transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-command-button-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50% !important;
+  min-height: 30px;
+  min-width: 30px;
+  box-shadow: 0 0 transparent;
+}
+
+.app-command-button .dx-button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.dx-button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.dx-popup-wrapper > .dx-overlay-content {
+  border-radius: 10px !important;
+}
+
+.app-list {
+  .dx-empty-message {
+    position: fixed;
+    text-align: center;
+    font-size: $base-standard-font;
+  }
+}
+
+.app-tree-view {
+  .dx-empty-message {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center !important;
+    font-size: $base-standard-font;
+  }
+}
+
+.dx-empty-message {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center !important;
+  font-size: $base-huge-font;
+}
+
+.data-grid-header {
+  font-size: $base-huge-font;
+  font-weight: bolder;
+}
+
+.app-data-grid {
+  .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit .dx-link,
+  .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
+  .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
+    .app-command-button {
+      svg {
+        color: white;
+      }
+    }
+  }
+
+  .dx-row-focused .app-command-button {
+     background-color: inherit;
+     border-radius: 50%;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+   }
+}
+
+.dx-loadpanel-wrapper:not([class*="app-loader"]) {
+  display: none;
+}
+
+.app-bold-label {
+  font-weight: 500;
+}
+
+.app-tree-view {
+  .dx-treeview-item {
+    padding: 7px 8px;
+  }
+}
+
+.app-tree-view.dx-treeview {
+  .dx-treeview-node-container {
+    .dx-treeview-node {
+      &.dx-state-selected:not(.dx-state-focused) > .dx-treeview-item {
+        background-color: rgba(102, 57, 182, 0.0);
+      }
+
+      &.dx-state-selected > .dx-treeview-item * {
+        color: $base-theme-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.app-content-card {
+  width: 100%;
+  height: 85vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 7px $base-border-light-grey;
+  border-radius: 10px;
+  width: 80%;
+  height: 70vh;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.app-row-space-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification-dialog {
+  padding: 5px;
+}
+
+.app-command-button-color {
+  background-color: $base-theme-color;
+  color: white;
+}
+
+.app-navigation-control {
+  .app-command-button {
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    background-color: rgba(128, 128, 128, 0.53);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../../assets/styles/variables';
+
+.requirement-template-header-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: $base-big-font;
+}

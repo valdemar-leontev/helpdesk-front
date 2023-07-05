@@ -1,0 +1,17 @@
+@import '../../../assets/styles/variables.scss';
+
+.requirement-template-list-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 10px 0;
+  border-bottom: 1px $base-border-light-grey solid;
+
+  span {
+    font-size: $base-huge-font;
+    font-weight: 500;
+  }
+}

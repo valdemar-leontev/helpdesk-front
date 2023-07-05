@@ -1,0 +1,56 @@
+@import '../../assets/styles/variables';
+
+.login-page {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  padding: 10px 10px;
+
+  .login-form-container {
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+    }
+
+    .login-form {
+      max-width: 450px;
+      display: flex;
+      background-color: white;
+      padding: 40px 30px;
+
+      @media screen and (max-width: 425px) {
+        width: 320px;
+        padding: 30px 20px;
+      }
+
+      .login-form-header {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .form-text {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      .login-form-changer {
+        font-size: $base-standard-font;
+
+        span:first-child {
+          margin-right: 5px;
+        }
+
+        span:last-child {
+          border-bottom: 2px solid $base-theme-color;
+          font-weight: bold;
+          color: $base-theme-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

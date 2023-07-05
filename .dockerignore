@@ -1,0 +1,8 @@
+.vscode
+.idea
+.assets
+node_modules
+build
+.dockerignore
+Dockerfile
+Dockerfile.prod

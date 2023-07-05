@@ -1,0 +1,32 @@
+[
+  {
+    "questionId": 4,
+    "value": "Ivan",
+    "userId": 1
+  },
+  {
+    "questionId": 5,
+    "value": 19,
+    "userId": 1
+  },
+  {
+    "questionId": 6,
+    "value": 4,
+    "userId": 1
+  },
+  {
+    "questionId": 7,
+    "value": 6,
+    "userId": 1
+  },
+  {
+    "questionId": 8,
+    "value": 9,
+    "userId": 1
+  },
+  {
+    "questionId": 8,
+    "value": 11,
+    "userId": 1
+  }
+]

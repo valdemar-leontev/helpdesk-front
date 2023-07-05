@@ -1,0 +1,123 @@
+export const appConstants = {
+  title: 'Helpdesk',
+  version: '2023.07.05',
+  company: '«Helpdesk» LTD©',
+  webApiRoot: process.env.NODE_ENV === 'production'
+    ? 'http://192.168.10.45:5000'
+    : 'http://localhost:5000',
+
+  pageSizes: [10, 25, 50, 100],
+
+  helpdeskInstructionUid: 'c7f82c174aae445aa4ebe1d4f3a54ace',
+
+  animationConfig: {
+    show: {
+      type: 'pop',
+      from: {
+        scale: 0,
+      },
+      to: {
+        scale: 1,
+      },
+    },
+    hide: {
+      type: 'fade',
+      from: 1,
+      to: 0,
+    },
+  } as any,
+
+  extToMime: {
+    pdf: 'application/pdf',
+    png: 'image/png',
+    jpeg: 'image/jpeg',
+    jpg: 'image/jpg',
+    txt: 'text/plain',
+  },
+
+  appearance: {
+    baseDarkGrey: '#464646',
+    baseThemeColor: 'rgb(0 150 136)',
+    smallIconSize: 18,
+    normalIconSize: 20,
+    bigIconSize: 22,
+    hugeIconSize: 30,
+    superHugeIconSize: 40,
+  },
+
+  strings: {
+    questionCloned: 'Вопрос был успешно клонирован.',
+    questionDeleted: 'Вопрос был успешно удален.',
+    questionCreated: 'Вопрос был успешно создан.',
+    requirementSaved: 'Заявка была успешно сохранена.',
+    requirementDeleted: 'Заявка была успешно удалена.',
+    requirementCleaned: 'Заявка была очищена.',
+    answersSent: 'Ваши ответы с этой заявки были уже отправлены.',
+    signInCompleted: 'Выполнен вход в систему.',
+    signOutCompleted: 'Выполнен выход из системы.',
+    requestFailed: 'В процессе выполнения запроса или получения данных от сервера произошла ошибка.',
+    authorizationDenied: 'Авторизация отклонена. Пользователь не существует или неверно указан пароль.',
+
+    featureNotAvailable: 'This feature is not available yet. We will work on it at the nearest time.',
+
+    noData: 'Нет данных для отображения',
+
+    alert: 'Внимание',
+    input: 'Ввод',
+    link: 'Ссылка',
+    close: 'Закрыть',
+    copy: 'Копировать',
+    send: 'Отправить',
+    signIn: 'Войти',
+    signOut: 'Выйти',
+    confirm: 'Подтверждение',
+    constructor: 'Конструктор',
+    password: 'Пароль',
+    passwordRequired: 'Требуется пароль',
+    userEmail: 'Почта пользователя',
+    rememberMe: 'Запомнить меня',
+    userEmailRequired: 'Требуется почта пользователя',
+    add: 'Добавить',
+    save: 'Сохранить',
+    open: 'Открыть',
+    formsList: 'Список заявок',
+    preview: 'Предварительный просмотр',
+    questionName: 'Наименование вопроса',
+    question: 'Вопрос',
+    questionType: 'Тип вопроса',
+    text: 'Текст',
+    singleSelectTitle: 'Один из списка',
+    multipleSelectTitle: 'Несколько из списка',
+    dropDownListTitle: 'Выпадающий список',
+    detailedResponseTitle: 'Развернутый ответ',
+    clone: 'Клонировать вопрос',
+    delete: 'Удалить',
+    deleting: 'Удаление',
+    requirementTemplateName: 'Наименование шаблона заявки',
+    newForm: 'Новая заявка',
+    formDescription: 'Описание заявки',
+    description: 'Описание',
+    variant: 'Вариант',
+    yourAnswer: 'Ваш ответ',
+    addVariant: 'Добавить вариант',
+    repeat: 'Повторить',
+    myAnswer: 'Мой ответ',
+    clear: 'Очистить',
+    create: 'Создать',
+    creating: 'Создание',
+    search: 'Поиск',
+    openOnNewTab: 'Открыть в новой вкладке',
+    userNameRequired: 'Требуется имя пользователя',
+    repeatPassword: 'Повторите пароль',
+    userName: 'Имя пользователя',
+    companySite: 'Сайт компании',
+    aboutProgram: 'О программе...',
+    aboutProgramTitle: 'О программе',
+    requiredQuestion: 'Вопрос является обязательным',
+    formIsNotFilled: 'Форма не заполнена.',
+    profile: 'Профиль',
+    requirements: 'Заявки',
+    requirementTemplates: 'Шаблоны заявок',
+    createRequirement: 'Создать заявку'
+  }
+};

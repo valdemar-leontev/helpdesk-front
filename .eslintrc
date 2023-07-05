@@ -1,0 +1,47 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/recommended",
+      "plugin:import/electron",
+      "plugin:import/typescript",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint"
+  ],
+  "rules": {
+      "indent": ["error", 2],
+      "quotes": [2, "single", { "avoidEscape": true }],
+      "object-curly-spacing": ["error", "always"],
+      "semi": ["error", "always"],
+      "react/react-in-jsx-scope": "off",
+      "react/display-name": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-non-null-assertion":  "off",
+      "no-debugger":"off",
+      "@typescript-eslint/no-inferrable-types": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
